@@ -2,6 +2,7 @@ import "./styles/globals.scss"
 
 import { Manrope } from 'next/font/google'
 import { ThemeProvider } from "@/providers/ThemeProvider";
+import { Toaster } from "@/components/ui/toaster"
 
 const manrope = Manrope({
   weights: [200, 300, 400, 500, 600, 700, 800],
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
           disableTransitionOnChange
         >
           {children}
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>
