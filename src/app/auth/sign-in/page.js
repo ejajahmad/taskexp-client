@@ -17,7 +17,7 @@ export default function SignIn() {
                 <HeaderStart />
             </div>
             <div className={`flex items-center justify-center`}
-                style={{ height: `calc(100vh - ${headerRef?.current?.clientHeight + 2}px)` }}
+                style={{ height: `calc(100vh - 70px)` }}
             >
                 <SignInForm />
             </div>
